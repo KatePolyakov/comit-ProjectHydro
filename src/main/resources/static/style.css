@@ -1,0 +1,22 @@
+.buttons-account{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.buttons-account__li{
+  margin: 15px;
+}
+
+.buttons-account__btn{
+  width: 250px;
+}
+.account-fullname__ul{
+  margin: 65px 0;
+}

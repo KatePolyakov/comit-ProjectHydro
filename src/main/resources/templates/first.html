@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"  type="text/css" media="all" href="main.css" th:href="@{main.css}">
+  <link rel="stylesheet" href="main.css">
+  <title>LangleyHydro</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Langley Hydro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">My Account<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registration</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  
+    <div class="container my-account mt-5">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <!-------------------------  ACCOUNT FULL NAME--------------------------------------------->
+            <div class="col">
+              <h3>MY ACCOUNT</h3>
+              <div>
+                <ul class="account-fullname__ul">
+                  <li>First Name</li>
+                  <li>Last Name</li>
+                  <li>Telephone Number</li>
+                </ul>
+              </div>
+              <a class="btn btn-primary btn-lg buttons-account__btn" href="#" role="button">EXIT</a>
+            </div>
+
+            <!------------------------- BUTTONS ACCOUNT --------------------------------------------->
+            <div class="col buttons-account">
+              
+                <ul class="buttons-account__ul">
+                  <li class="buttons-account__li"><a class="btn btn-primary btn-lg buttons-account__btn" th:href="@{/second.html}" role="button">Account Number</a></li>
+                  <li class="buttons-account__li"><a class="btn btn-primary btn-lg buttons-account__btn" href="#" role="button">Add New Account</a></li>
+                </ul>
+
+
+          </div>
+          </div>
+        </div>
+<!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+      </div>
+    </div>
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
